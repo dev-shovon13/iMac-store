@@ -6,14 +6,15 @@ const memory = document.getElementById("extra-memory")
 const storage = document.getElementById("extra-storage")
 const charge = document.getElementById("extra-charge")
 
-// updating total 
+// updating total price starts here
 function updateTotal(name, price) {
     name.innerText = price
     totalPrice.innerText = parseInt(basePrice.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(charge.innerText)
     finalPrice.innerText = parseInt(basePrice.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(charge.innerText)
 }
+// updating total price ends here
 
-// apply promo code
+// apply promo code starts here
 function promoUpdate() {
     const promoInput = document.getElementById("promo-input")
     const totalPrice = document.getElementById("total-price")
@@ -23,6 +24,7 @@ function promoUpdate() {
     }
     promoInput.value = ""
 }
+// apply promo code ends here
 
 // update memory config 
 document.getElementById("8gb-memory").addEventListener("click", function () {

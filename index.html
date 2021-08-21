@@ -9,6 +9,7 @@
     <!-- bootstrap cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,7 +20,7 @@
 
 <body class="bg-white">
     <!-- header section starts here  -->
-    <header class="">
+    <header>
         <section class="bg-dark">
 
             <!-- nav bar start -->
@@ -28,6 +29,8 @@
                     <div class="col-10 col-md-1">
                         <a href="#"><i class="fab fa-apple text-decoration-none text-white fs-3"></i></a>
                     </div>
+
+                    <!-- navbar options  -->
                     <div class="d-md-flex d-none col-11 justify-content-between">
                         <a href="#" class="text-decoration-none text-white">Store</a>
                         <a href="#" class="text-decoration-none text-white">Mac</a>
@@ -41,6 +44,7 @@
                         <a href="#" class="text-decoration-none text-white"><i class="fas fa-shopping-bag"></i></a>
                     </div>
 
+                    <!-- navbar minimized button  -->
                     <div class="d-block d-md-none col-2">
                         <i class="fas fa-bars fs-3"></i>
                     </div>
@@ -56,7 +60,7 @@
                 <div>
                     <a href="#" class="text-decoration-none text-dark fs-4">iMac</a>
                 </div>
-                <div class="">
+                <div>
                     <a href="#" class="text-decoration-none text-secondary px-2">Overview</a>
                     <a href="#" class="text-decoration-none text-secondary px-2">macOS</a>
                     <a href="#" class="text-decoration-none text-secondary px-2">Tech Specs</a>
@@ -73,52 +77,67 @@
         <!-- product section  -->
         <section class="row border-bottom border-2">
 
-            <!-- product image start  -->
+            <!-- product image section start  -->
             <div class="col-lg-6 mt-4 d-lg-block justify-content-center">
+
+                <!-- product image -->
                 <div class="d-flex justify-content-center">
                     <img src="images/iMac.png" alt="" class=" img-fluid">
                 </div>
+
+                <!-- more images button  -->
                 <div class="d-flex align-items-center justify-content-center">
                     <a href="" class="text-info text-decoration-none pe-auto">View gallery</a>
                 </div>
+
+                <!-- delivery and return options -->
                 <div class="d-flex text-center mt-5 border-bottom">
                     <div class="w-50">
                         <i class="fas fa-box fs-3 text-secondary"></i>
                         <p>Free delivery or pick up available items at an Apple Store.</p>
                     </div>
-
                     <div class="w-50">
                         <i class="fas fa-people-carry fs-3 text-secondary"></i>
                         <p>Free and easy returns</p>
                     </div>
                 </div>
+
+                <!-- customer service  -->
                 <div class="d-flex align-items-center justify-content-center mt-4">
                     <h1> <i class="far fa-comments me-3"></i></h1>
-                    <div class="">
+                    <div>
                         <p class="mb-0">Have questions about buying a Mac?</p>
                         <a href="" class="text-info text-decoration-underline pe-auto">Chat with a Mac Specialist</a>
                     </div>
                 </div>
             </div>
-            <!-- product image start  -->
+            <!-- product image section end  -->
 
             <!-- product info start  -->
             <div class="col-lg-6 px-5 mt-4 ">
+
+                <!-- product description  -->
                 <h2 class="mb-3 mt-4">Customize your Blue 24‑inch iMac with Apple M1 chip.</h2>
                 <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
                     16-core Neural Engine.8GB unified memory. 256GB SSD storage. Two Thunderbolt / USB 4 ports. Magic
                     Mouse. Magic Keyboard - US English</p>
+
+                <!-- upgrade memory  -->
                 <p class="fw-bold mt-4 mb-1">Memory</p>
                 <button id="8gb-memory" type="button" class="btn btn-outline-dark btn-sm mt-1 ">8GB unified
                     memory</button>
                 <button id="16gb-memory" type="button" class="btn btn-outline-dark btn-sm mt-1 ">16GB unified
                     memory</button>
+
+                <!-- upgrade storage  -->
                 <p class="fw-bold mt-4 mb-1">Storage</p>
                 <button id="256gb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1 ">256GB SSD
                     storage</button>
                 <button id="512gb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1 ">512GB SSD
                     storage</button>
                 <button id="1tb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1">1TB SSD storage</button>
+
+                <!-- choose delivery option  -->
                 <p class="fw-bold mt-4 mb-1">Choose Your Delivery Option</p>
                 <button id="free-delivery" type="button" class="btn btn-outline-dark btn-sm mt-1 ">FRIDAY, August 27
                     FREE Prime
@@ -129,22 +148,32 @@
                 <!-- product configuration start  -->
                 <div class="row">
                     <article class="col-sm-7 col-10 fw-bold mt-4">
+
+                        <!-- shows base price of the product  -->
                         <div class="row border-bottom py-2">
                             <div class="col-9">Base Price</div>
                             <div class="col-3">$<span id="base-price">1299</span></div>
                         </div>
+
+                        <!-- shows extra memory options of the product  -->
                         <div class="row border-bottom py-2">
                             <div class="col-9">Extra Memory Cost</div>
                             <div class="col-3">$<span id="extra-memory">0</span></div>
                         </div>
+
+                        <!-- shows extra storage options of the product  -->
                         <div class="row border-bottom py-2">
                             <div class="col-9">Extra Storage Cost</div>
                             <div class="col-3">$<span id="extra-storage">0</span></div>
                         </div>
+
+                        <!-- shows delivery options of the product  -->
                         <div class="row border-bottom border-dark py-2">
                             <div class="col-9">Delivery Charge</div>
                             <div class="col-3">$<span id="extra-charge">0</span></div>
                         </div>
+
+                        <!-- shows total price after upgrading of the product  -->
                         <div class="row border-bottom py-2">
                             <div class="col-9">Total Price</div>
                             <div class="col-3">$<span id="total-price">1299</span></div>
@@ -156,9 +185,13 @@
                 <!-- promo code section start -->
                 <p class="text-secondary fw-bold mt-3 mb-1">Add Promo Code</p>
                 <div class="row g-3">
+
+                    <!-- promo input  -->
                     <div class="col-auto">
                         <input id="promo-input" type="text" class="form-control" placeholder="Type Promo Code">
                     </div>
+
+                    <!-- apply promo button  -->
                     <div class="col-auto">
                         <button id="promo-btn" class="btn btn-danger mb-3">Apply</button>
                     </div>
