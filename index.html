@@ -9,8 +9,8 @@
     <!-- bootstrap cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- script link  -->
     <script defer src="js/script.js"></script>
-    <!-- <script defer src="js/script-DRY.js"></script> -->
     <title>Buy Your iMac</title>
 </head>
 
@@ -22,35 +22,40 @@
     <!-- main section starts here  -->
     <main>
         <!-- product section  -->
-        <section class="d-flex border-bottom border-2">
+        <section class="d-lg-flex border-bottom border-2">
 
             <!-- product image start  -->
-            <div class="w-50 mt-4">
+            <div class="w-lg-50 mt-4 d-flex d-lg-block justify-content-center">
                 <img src="images/iMac.png" alt="">
             </div>
             <!-- product image start  -->
 
             <!-- product info start  -->
-            <div class="w-50 px-5 mt-4 ">
+            <div class="w-lg-50 px-5 mt-4 ">
                 <h2 class="mb-3 mt-4">Customize your Blue 24‑inch iMac with Apple M1 chip.</h2>
                 <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
                     16-core Neural Engine.8GB unified memory. 256GB SSD storage. Two Thunderbolt / USB 4 ports. Magic
                     Mouse. Magic Keyboard - US English</p>
-                <p class="fw-bold mt-4">Memory</p>
-                <button id="8gb-memory" type="button" class="btn btn-outline-dark mt-1 ">8GB unified memory</button>
-                <button id="16gb-memory" type="button" class="btn btn-outline-dark mt-1 ">16GB unified memory</button>
-                <p class="fw-bold mt-4">Storage</p>
-                <button id="256gb-storage" type="button" class="btn btn-outline-dark mt-1 ">256GB SSD storage</button>
-                <button id="512gb-storage" type="button" class="btn btn-outline-dark mt-1 ">512GB SSD storage</button>
-                <button id="1tb-storage" type="button" class="btn btn-outline-dark mt-1">1TB SSD storage</button>
-                <p class="fw-bold mt-4">Choose Your Delivery Option</p>
-                <button id="free-delivery" type="button" class="btn btn-outline-dark mt-1 ">FRIDAY, August 27 FREE Prime
+                <p class="fw-bold mt-4 mb-1">Memory</p>
+                <button id="8gb-memory" type="button" class="btn btn-outline-dark btn-sm mt-1 ">8GB unified
+                    memory</button>
+                <button id="16gb-memory" type="button" class="btn btn-outline-dark btn-sm mt-1 ">16GB unified
+                    memory</button>
+                <p class="fw-bold mt-4 mb-1">Storage</p>
+                <button id="256gb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1 ">256GB SSD
+                    storage</button>
+                <button id="512gb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1 ">512GB SSD
+                    storage</button>
+                <button id="1tb-storage" type="button" class="btn btn-outline-dark btn-sm mt-1">1TB SSD storage</button>
+                <p class="fw-bold mt-4 mb-1">Choose Your Delivery Option</p>
+                <button id="free-delivery" type="button" class="btn btn-outline-dark btn-sm mt-1 ">FRIDAY, August 27
+                    FREE Prime
                     Delivery</button>
-                <button id="charged-delivery" type="button" class="btn btn-outline-dark mt-1">SATURDAY, August 21
+                <button id="charged-delivery" type="button" class="btn btn-outline-dark btn-sm mt-1">SATURDAY, August 21
                     Delivery Charge $20</button>
 
                 <!-- product configuration start  -->
-                <article class="w-50 fw-bold mt-5">
+                <article class="w-50 fw-bold mt-4">
                     <div class="row border-bottom py-2">
                         <div class="col-sm-9">Best Price</div>
                         <div class="col-sm-3">$<span id="base-price">1299</span></div>
@@ -75,7 +80,7 @@
                 <!-- product configuration end  -->
 
                 <!-- promo code section start -->
-                <p class="text-secondary fw-bold mt-3">Add Promo Code</p>
+                <p class="text-secondary fw-bold mt-3 mb-1">Add Promo Code</p>
                 <div class="row g-3">
                     <div class="col-auto">
                         <input id="promo-input" type="text" class="form-control" placeholder="Type Promo Code">
