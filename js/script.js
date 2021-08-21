@@ -7,7 +7,7 @@ const storage = document.getElementById("extra-storage")
 const charge = document.getElementById("extra-charge")
 
 // updating total 
-function total(name, price) {
+function updateTotal(name, price) {
     name.innerText = price
     totalPrice.innerText = parseInt(basePrice.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(charge.innerText)
     finalPrice.innerText = parseInt(basePrice.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(charge.innerText)
@@ -26,29 +26,29 @@ function promoUpdate() {
 
 // update memory config 
 document.getElementById("8gb-memory").addEventListener("click", function () {
-    total(memory, 0)
+    updateTotal(memory, 0)
 })
 document.getElementById("16gb-memory").addEventListener("click", function () {
-    total(memory, 180)
+    updateTotal(memory, 180)
 })
 
 // update storage config
 document.getElementById("256gb-storage").addEventListener("click", function () {
-    total(storage, 0)
+    updateTotal(storage, 0)
 })
 document.getElementById("512gb-storage").addEventListener("click", function () {
-    total(storage, 100)
+    updateTotal(storage, 100)
 })
 document.getElementById("1tb-storage").addEventListener("click", function () {
-    total(storage, 180)
+    updateTotal(storage, 180)
 })
 
 // update charge config
 document.getElementById("free-delivery").addEventListener("click", function () {
-    total(charge, 0)
+    updateTotal(charge, 0)
 })
 document.getElementById("charged-delivery").addEventListener("click", function () {
-    total(charge, 20)
+    updateTotal(charge, 20)
 })
 
 // apply promo handler
